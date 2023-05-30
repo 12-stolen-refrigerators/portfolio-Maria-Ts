@@ -13,20 +13,68 @@
 		<link rel="shortcut icon" href="/img/refr-favicon-32x32.png">
 		<link rel="stylesheet" href="/css/style.css">
 		<script src="https://kit.fontawesome.com/db4f42a312.js" crossorigin="anonymous"></script>
+		
+		<style>
+			#preloader {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background: #0c1821;
+				z-index: 999;
+			}
+
+			#preloader.hide-preloader {
+				animation: hidePreloader 1s;
+			}
+
+			#preloader.preloader-hidden {
+				display: none;
+			}
+
+			@keyframes hidePreloader {
+				0% {
+					opacity: 1;
+				}
+				100% {
+					opacity: 0;
+				}
+			}
+		</style>
+
 		<title>Maria Ts' 13-th refrigerator</title>
 
 	</head>
 	<body>
 		
+
+	<div id="preloader">
+			<img src="/img/refrig2.png" alt="..." style="height: 50%">
+		</div>
+
+		<script>
+			window.onload = function() {
+				let preloader = document.getElementById('preloader');
+				preloader.classList.add('hide-preloader');
+				setInterval(function() {
+					preloader.classList.add('preloader-hidden');
+				}, 1500);
+			}
+		</script>
+
 		<div class="container">
 		<div class="row">
 			
-			<img src="/img/refrig2.png" alt="" style="height: 60px;" class="mx-auto">
+			<img src="/img/12refrigerators.png" alt="" style="height: 60px;" class="mx-auto my-3">
 			
 		</div>
 		<nav class="nav nav-pills flex-column flex-sm-row">
 		
-		<a class="flex-sm-fill text-sm-center nav-link active-tab" href="/main">Главная</a>
+		<a class="flex-sm-fill text-sm-center nav-link" href="/main">Главная</a>
 
 			<a class="flex-sm-fill text-sm-center nav-link dropdown-toggle" href="/portfolio" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 			Портфолио
@@ -44,6 +92,10 @@
 		
 
 		<?php echo $content; ?>
+
+		<footer class="container-fluid text-center py-3 card-text">
+			&copy; Maria Tsval - Все права защищены <script>document.write(new Date().getFullYear())</script>
+		</footer>
 
 		<!-- Вариант 1: пакет jQuery и Bootstrap (включает Popper) -->
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
