@@ -1,0 +1,54 @@
+        /* $rich-black: #0c1821ff;
+        $oxford-blue: #1b2a41ff;
+        $charcoal: #324a5fff;
+        $lavender-web: #ccc9dcff;
+        $ecru: #d5c179ff; */
+        body {
+            background-color: #0c1821ff;
+            font-family: 'Alumni Sans', sans-serif;
+            font-size: 1.5rem;
+            color: #ccc9dcff;
+        }
+
+        .nav-link {
+            color: #d5c179ff;
+            font-size: 1.7rem;
+        }
+
+        .nav-link:hover {
+            color: #d5c179ff;
+            filter: brightness(120%);
+            text-decoration: underline;
+            /* font-weight: 700; */
+        }
+
+        .active-tab {
+            color: #ccc9dcff;
+        }
+
+        .dropdown-item {
+            color: #d5c179ff;
+            font-size: 1.2rem;
+            font-weight: 400;
+
+        }
+
+        .dropdown-menu {
+            background: transparent;
+        }
+
+        .dropdown-item:hover {
+            color: #d5c179ff;
+            filter: brightness(120%);
+            text-decoration: underline;
+            background: transparent;
+        }
+
+        h5 {
+            color: #d5c179ff;
+        }
+
+        p {
+            color: #ccc9dcff;
+
+        }
