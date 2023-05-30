@@ -1,0 +1,40 @@
+<nav class="justify-content-center nav nav-pills flex-column flex-sm-row">
+    <a class="flex-sm-fill text-sm-center nav-link nav-link-portfolio" href="/portfolio-places">Места</a>
+    <a class="flex-sm-fill text-sm-center nav-link nav-link-portfolio" href="/portfolio-things">Объекты</a>
+    <a class="flex-sm-fill text-sm-center nav-link nav-link-portfolio active-tab" href="/portfolio-people">Люди</a>
+</nav>
+
+<div class="container mt-5 mb-3">
+        <div class="card text-white mt-5">
+          <img src="../img/IMG_1568.JPG" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <p class="card-text align-bottom">Hanami. May 2022.</p>
+          </div>
+        </div>
+
+        <div class="card text-white mt-5 mx-auto">
+          <img src="../img/IMG_3792.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <p class="card-text align-bottom">Japanese maple. October 2022.</p>
+          </div>
+        </div>
+
+        <div class="card text-white mt-5 mx-auto">
+          <img src="../img/IMG_8639.JPG" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <p class="card-text align-bottom">Cat. February 2021.</p>
+          </div>
+        </div>
+          
+
+<script>
+  var img = document.getElementsByTagName('img');
+
+  for(var i in img)
+  {
+      img[i].oncontextmenu = function()
+      {
+          return false;
+      }
+  }
+</script>

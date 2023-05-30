@@ -1,0 +1,39 @@
+<nav class="justify-content-center nav nav-pills flex-column flex-sm-row">
+    <a class="flex-sm-fill text-sm-center nav-link nav-link-portfolio" href="/portfolio-places">Места</a>
+    <a class="flex-sm-fill text-sm-center nav-link nav-link-portfolio" href="/portfolio-things">Объекты</a>
+    <a class="flex-sm-fill text-sm-center nav-link nav-link-portfolio active-tab" href="/portfolio-people">Люди</a>
+</nav>
+
+<div class="container mt-5 mb-3">
+        <div class="card text-white mt-5">
+          <img src="../img/IMG_1843.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <p class="card-text align-bottom">Tattoo. June 2022.</p>
+          </div>
+        </div>
+
+        <div class="card text-white mt-5 mx-auto">
+          <img src="../img/IMG_3704.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <p class="card-text align-bottom">...</p>
+          </div>
+        </div>
+
+        <div class="card text-white mt-5 mx-auto">
+          <img src="../img/IMG_1098.JPG" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <p class="card-text align-bottom">...</p>
+          </div>
+        </div>
+
+<script>
+  var img = document.getElementsByTagName('img');
+
+  for(var i in img)
+  {
+      img[i].oncontextmenu = function()
+      {
+          return false;
+      }
+  }
+</script>
