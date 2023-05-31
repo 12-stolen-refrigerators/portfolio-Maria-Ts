@@ -2,7 +2,7 @@
         $oxford-blue: #1b2a41ff;
         $charcoal: #324a5fff;
         $lavender-web: #ccc9dcff;
-        $ecru: #d5c179ff; */
+        $ecru: #d5c179; */
         body {
             background-color: #0c1821ff;
             font-family: 'Alumni Sans', sans-serif;
@@ -10,16 +10,22 @@
             color: #ccc9dcff;
         }
 
-        .nav-link {
-            color: #d5c179ff;
+        .nav-link,
+        .d-block {
+            color: #d5c179;
             font-size: 1.7rem;
         }
 
-        .nav-link:hover {
-            color: #d5c179ff;
+        .nav-link:hover,
+        .d-block:hover {
+            color: #d5c179;
             filter: brightness(120%);
             text-decoration: underline;
-            /* font-weight: 700; */
+        }
+
+        .nav-link-portfolio {
+            color: #d5c179;
+            font-size: 1.4rem;
         }
 
         .active-tab {
@@ -27,7 +33,7 @@
         }
 
         .dropdown-item {
-            color: #d5c179ff;
+            color: #d5c179;
             font-size: 1.2rem;
             font-weight: 400;
 
@@ -38,17 +44,53 @@
         }
 
         .dropdown-item:hover {
-            color: #d5c179ff;
+            color: #d5c179;
             filter: brightness(120%);
             text-decoration: underline;
             background: transparent;
         }
 
         h5 {
-            color: #d5c179ff;
+            color: #d5c179;
+            font-size: 1.6rem;
         }
 
         p {
             color: #ccc9dcff;
+        }
 
+        .fa-brands {
+            background: #d5c179;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+
+        .fa-brands:hover {
+            filter: brightness(150%);
+        }
+
+        .card-img-overlay {
+            top: auto;
+            bottom: 0;
+        }
+
+        .card-img {
+            filter: brightness(50%);
+            filter: contrast(30%);
+            max-width: 900px;
+        }
+
+        .card-img:hover {
+            filter: brightness(150%);
+            filter: contrast(100%);
+        }
+
+        .card-text {
+            font-size: 1.2rem;
+            opacity: 70%;
+        }
+
+        .card {
+            background: transparent;
         }
